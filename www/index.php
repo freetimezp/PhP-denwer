@@ -1,28 +1,40 @@
-<!doctype html>
-<html lang="en">
-<head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Php -->
+<?php 
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
+// "" you can write tags in echo + "" take more memory in PC then ''
+echo "Hello world! <br />";
+echo 'Hello world!';
+echo 'Hello world!';
+echo 'Hello world!';  #Comment
+/*
+Big 
+......
+......
+comment
+*/
+echo "<br />";
 
-<!-- main CSS -->
-<link rel="stylesheet" href="css/style.css">
+$number = 5;
+echo "number = $number";
+echo "<br />";
+echo '$number';
 
-<title>PhP</title>
-</head>
-<body>
-	<p>Start learning. Need to undestand Magento 2.</p>
+$bool = true;
+echo "<br />";
+echo "$bool"; // boolean allways = "1" and false = "" in PhP
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+echo "<br />";
+$number = 15;
+echo "number = $number";
+echo "<br />";
+echo "number = " . $number;
+echo "<br />";
 
+echo PHP_VERSION;
+echo "<br />";
+define("PI", 3.14);
+echo PI;
+echo "<br />";
+echo defined("PI"); // checkup const in your php code, if find, unswer = true = 1
 
-<!-- main JS -->
-
-
-
-</body>
-</html>
+?>
