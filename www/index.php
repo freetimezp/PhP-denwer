@@ -106,4 +106,22 @@ echo $bool_7 . "<br />";
 $bool_8 = !($x4 != $y4 || $x4 >= $z4) && $x4 == $z4;
 echo $bool_8 . "<br />";
 
+
+// php-5
+
+$string5 = "example";
+$num5 = 0;
+
+$bool_5 = $string5 == true;
+echo "$bool_5 = $string5 == true;";
+
+$bool_6 = $num5 == "";
+echo "<br />$bool_6 = $num5 == \"\";<hr />";
+
+$bool_7 = $string5 === true; // type of values
+echo "<br />$bool_7 = $string5 === true;<hr />";
+
+
+
+
 ?>
