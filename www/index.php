@@ -121,6 +121,24 @@ echo "<br />$bool_6 = $num5 == \"\";<hr />";
 $bool_7 = $string5 === true; // type of values
 echo "<br />$bool_7 = $string5 === true;<hr />";
 
+$x = 10;
+$y = 5;
+
+// php-6
+
+if ($x == $y && $x !=12 && $y == 5 && ($x + 5) == 15) {
+	echo 'Done!!!<br /><hr />';
+} else if ($x == 14 || $y != 7) {
+	$b = 5;
+	echo '$b = ' . "$b<br /><hr />";
+} else if ($x <= $y) {
+	echo "false<br /><hr />";
+}
+
+$x == $y ? $string = "Yes" : $string = "No";
+echo $string . "<br /><hr />";
+
+
 
 
 
