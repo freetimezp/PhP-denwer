@@ -139,6 +139,87 @@ $x == $y ? $string = "Yes" : $string = "No";
 echo $string . "<br /><hr />";
 
 
+// php-7
+
+$x = 12;
+
+switch ($x) {
+	case "Hello": echo 'this is string'; break;
+	case 4: echo 'this is wrong number'; break;
+	case 12: echo 'BINGO!'; break;
+	default: echo "Some default value";
+}
+
+
+// php-8
+
+for ($i = 0; $i < 10; $i++) {
+	echo "$i<br />";
+}
+
+for ($y = 100; $y >= 70; $y -= 2) {
+ if ($y % 5 == 0) {
+ 	echo "$y<br /><hr />";
+ }
+}
+
+for ($y = 100; $y >= 70; $y -= 2) {
+ if ($y % 5 == 0) continue;
+ {
+ 	echo "continue $y<br /><hr />";
+ }
+}
+
+echo "<hr />";
+
+$c = 0;
+
+while ($c < 10) {
+	if ($c == 7) {
+		for ($y = 0; $y < 5; $y += 1) {
+			echo "another string $y <br />";
+		}
+	}
+	$c++;
+	echo "string $c <br />";
+}
+
+echo "<hr />";
+
+$z = 0;
+
+do {
+	$z++;
+	echo "string z = $z <br />";
+} while ($z < 10);
+
+echo "<hr />";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
